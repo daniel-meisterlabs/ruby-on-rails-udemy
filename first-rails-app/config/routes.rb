@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  # Points to 'app/views/pages/home.html.erb'
+  root 'pages#home'
+
+  # Defines the GET /about route and where it points to
+  get 'about', to: 'pages#about'
 end
